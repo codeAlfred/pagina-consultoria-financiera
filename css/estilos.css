@@ -1,0 +1,379 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: sans-serif; }
+
+.container {
+  margin: auto;
+  width: 75%; }
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+/*----------------------estilos del header----------------------*/
+.header {
+  background: #ccc;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+
+.logo {
+  padding: 10px 10px; }
+  .logo a {
+    text-decoration: none;
+    color: green;
+    font-size: 2em; }
+  .logo .logo-item {
+    background: #f16876;
+    color: white;
+    padding: 0 14px; }
+  .logo .logo-item:hover {
+    opacity: .3; }
+
+.c1 {
+  color: #3B58B8; }
+
+.menu-list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap; }
+  .menu-list li {
+    padding: 4px 10px; }
+  .menu-list a {
+    text-decoration: none;
+    color: green; }
+  .menu-list a:hover {
+    color: #3B58B8; }
+
+/* -----------------------estilos del banner---------------------*/
+.banner {
+  background: url("../img/banner1.jpeg");
+  background-color: rgba(0, 0, 100, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column; }
+  .banner .banner-title, .banner .banner-subtitle {
+    text-align: center;
+    margin: 10px;
+    padding: 5px; }
+  .banner h1 {
+    color: white;
+    font-size: 6em; }
+  .banner h4 {
+    color: white;
+    font-size: 2.1em; }
+  .banner a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 55px;
+    margin: 20px;
+    background: #f16876;
+    font-size: 1.5em; }
+    .banner a:hover {
+      background: #3B58B8; }
+  .banner .banner-btn {
+    text-align: center; }
+
+/*-------estilos baner secundario--------*/
+.banner-secundario {
+  position: relative;
+  z-index: -1;
+  height: 500px; }
+  .banner-secundario::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000; }
+  .banner-secundario img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; }
+
+/*-----------------------estilos del INDEX----------------------*/
+.inicio-servicios, .inicio-equipo, .inicio-clientes {
+  margin-top: 60px;
+  padding-top: 55px;
+  padding-bottom: 55px; }
+
+.column-50 {
+  width: 50%; }
+
+.contenido-descriptivo {
+  padding: 10px 100px 10px 30px; }
+  .contenido-descriptivo h1 {
+    margin-top: 20px; }
+  .contenido-descriptivo p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: justify; }
+  .contenido-descriptivo a {
+    margin-top: 40px;
+    text-decoration: none;
+    color: white;
+    background: #f16876;
+    padding: 8px 30px;
+    font-size: 1.3em; }
+    .contenido-descriptivo a:hover {
+      opacity: .5; }
+
+.inicio-equipo, .inicio-prensa {
+  background: #CDDAE8; }
+
+.contenido-clientes ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  margin-top: 70px; }
+
+.contenido-clientes a {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: #333;
+  transition: all 0.5s; }
+  .contenido-clientes a:hover {
+    opacity: .9;
+    color: antiquewhite; }
+
+.inicio-prensa .container {
+  margin-top: 100px;
+  padding: 40px 0 60px 0; }
+
+.contenido-descriptivo2 a {
+  text-decoration: none;
+  color: white;
+  background: #f16876;
+  padding: 8px 30px;
+  font-size: 1.3em; }
+  .contenido-descriptivo2 a:hover {
+    opacity: .5; }
+
+.column-33 {
+  background: white;
+  width: 30%;
+  margin: 8px; }
+  .column-33 img {
+    height: 200px;
+    object-fit: cover; }
+
+.prensa-contenido {
+  padding: 11px 20px;
+  margin-top: 20px; }
+  .prensa-contenido a {
+    margin-top: 20px;
+    padding: 15px;
+    text-decoration: none;
+    color: #333; }
+
+.prensa-comentario {
+  margin-top: 45px;
+  border-top: 1px solid #666; }
+
+/*---------------estilo de seccion contactenos----------------*/
+.contactenos {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999; }
+  .contactenos .container {
+    padding: 90px 0;
+    display: flex;
+    align-items: center; }
+
+.contactenos-btn a {
+  text-decoration: none;
+  color: white;
+  background: #f16876;
+  padding: 20px 70px;
+  margin-left: 70px; }
+  .contactenos-btn a:hover {
+    opacity: .5; }
+
+/*-----------------------estilos de footer-----------------------*/
+.footer {
+  background: #ccc;
+  padding: 45px 0; }
+  .footer p {
+    font-size: 0.8em; }
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 2em; }
+
+/*-------------------estilos de NOSOTROS--------------------*/
+.nosotros-titulo {
+  position: relative;
+  z-index: 2;
+  top: -250px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 3.5em; }
+
+.nosotros {
+  padding: 70px 0; }
+
+.nosotros-contenido {
+  width: 50%;
+  padding-left: 50px; }
+  .nosotros-contenido h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px; }
+
+.equipo {
+  padding: 70px 0;
+  background: #CDDAE8; }
+  .equipo h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px; }
+
+.equipo-persona {
+  padding: 45px 0;
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .equipo-persona img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover; }
+
+.datos-persona {
+  padding-top: 25px; }
+  .datos-persona a {
+    text-decoration: none;
+    color: #3B58B8; }
+  .datos-persona spam {
+    color: #3B58B8; }
+
+/*-------------------estilos de SERVICIOS-------------------*/
+.serviciosT {
+  width: 48%;
+  margin-bottom: 50px; }
+  .serviciosT .servicios1 {
+    display: flex;
+    flex-wrap: wrap; }
+    .serviciosT .servicios1 img {
+      height: 90px;
+      width: 90px; }
+    .serviciosT .servicios1 p {
+      color: #555;
+      font-size: 1.5em;
+      padding: 5px 10px; }
+  .serviciosT p {
+    color: #555;
+    padding: 5px 10px; }
+
+/*-------------------estilos de NOVEDADES-------------------*/
+a {
+  text-decoration: none; }
+
+.novedad {
+  border: 1px solid #555;
+  margin-bottom: 35px; }
+
+.comlumn-50 {
+  width: 50%; }
+
+.novedad-imagen img {
+  height: 100%;
+  object-fit: cover; }
+
+.novedad-contenido {
+  padding: 30px; }
+  .novedad-contenido img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #555; }
+
+.novedad-contenido-encabezado {
+  display: flex;
+  flex-wrap: wrap; }
+  .novedad-contenido-encabezado p {
+    padding: 3px 0 0 10px;
+    margin: 0;
+    color: #555; }
+
+.novedad-contenido-contenido {
+  padding-top: 10px; }
+  .novedad-contenido-contenido a {
+    color: #555;
+    font-size: 1.5em; }
+    .novedad-contenido-contenido a:hover {
+      color: #3B58B8; }
+  .novedad-contenido-contenido p {
+    color: #555; }
+
+.item-comentario {
+  border-top: 1px solid #555;
+  padding-top: 15px; }
+  .item-comentario a {
+    font-size: 1em;
+    padding: 0 15px; }
+
+/*------------------estilos de CONTACTO------------------*/
+.contacto {
+  margin-bottom: 70px; }
+
+.contacto-titulo {
+  font-size: 1.3em;
+  color: #555;
+  margin-bottom: 35px; }
+
+.contacto-datos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 35px;
+  justify-content: space-around; }
+  .contacto-datos .contacto-datos-direccion, .contacto-datos .contacto-datos-telefono {
+    padding: 0 40px 0 0;
+    color: #555; }
+    .contacto-datos .contacto-datos-direccion h3, .contacto-datos .contacto-datos-telefono h3 {
+      margin-bottom: 20px; }
+    .contacto-datos .contacto-datos-direccion p, .contacto-datos .contacto-datos-telefono p {
+      padding: 0;
+      margin: 0; }
+
+.form-contact {
+  padding: 0 15px; }
+  .form-contact .form-inputs {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0; }
+
+.btn-envio {
+  color: white;
+  background: #3B58B8;
+  font-size: 1em;
+  padding: 5px 15px; }
+
+/*-------------------estilos de CLIENTES-------------------*/
+.clientes {
+  margin: 25px 0;
+  margin-bottom: 35px;
+  color: #555; }
+  .clientes p {
+    padding-bottom: 35px;
+    padding-right: 35px; }
+
+.cliente-descripcion {
+  padding: 5px 20px; }
